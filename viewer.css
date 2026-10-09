@@ -1,15 +1,16 @@
-.ba-spine-gallery{border:1px solid var(--border-color-base,#8993a344);border-radius:12px;overflow:hidden;margin:1rem 0;background:var(--background-color-base,#f4f6fa);color:var(--color-base,#202734)}
-.ba-spine-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;padding:.75rem;background:var(--background-color-interactive,#8692a314)}
-.ba-spine-toolbar label{display:flex;align-items:center;gap:.25rem;font-size:.9rem}
-.ba-spine-toolbar button,.ba-spine-toolbar select{font:inherit;padding:.35rem .55rem;border:1px solid #8492a366;border-radius:6px;background:var(--background-color-base,#f4f6fa);color:inherit;cursor:pointer}
-.ba-spine-toolbar select{max-width:180px}.ba-spine-toolbar button:hover{border-color:#43aee8}.ba-spine-zoom{min-width:3rem;text-align:center;font-variant-numeric:tabular-nums}
-.ba-spine-stage{position:relative;width:100%;height:clamp(320px,55vh,680px);overflow:hidden;background:linear-gradient(135deg,#a4c9ea28,#577cba12)}
-.ba-spine-stage canvas{display:block;width:100%;height:100%;touch-action:none;outline:none}
-.ba-spine-stage canvas:focus-visible{outline:2px solid #43aee8;outline-offset:-3px}
-.ba-spine-status{padding:.65rem .8rem;font-size:.9rem}.ba-spine-error{color:#d83548}.ba-spine-hint{margin:0!important;padding:0 .8rem .7rem!important;font-size:.85rem;opacity:.8}
-.ba-spine-details{padding:0 .8rem .65rem}.ba-spine-details pre{white-space:pre-wrap;font-size:12px;max-height:280px;overflow:auto}
-.ba-spine-marker{position:absolute;border:2px dashed #f69522;border-radius:50%;color:#f69522;pointer-events:none;box-sizing:border-box;font-size:12px;text-shadow:0 1px 2px #111;background:#f695220c}
-.ba-spine-marker-eye{border-color:#20baf6;color:#20baf6;background:#20baf60c}.ba-spine-marker[hidden]{display:none}
-.ba-spine-gallery:fullscreen{display:flex;flex-direction:column;background:var(--background-color-base,#182435)}
-.ba-spine-gallery:fullscreen .ba-spine-stage{flex:1;height:auto;min-height:0}.ba-spine-gallery:fullscreen .ba-spine-details{display:none}
-@media(max-width:480px){.ba-spine-toolbar{gap:.35rem;padding:.5rem}.ba-spine-toolbar select{max-width:140px}.ba-spine-stage{height:420px}.ba-spine-toolbar button{font-size:.85rem}.ba-spine-debug-label{width:100%}}
+.ba-spine-gallery{position:relative;border:1px solid var(--border-color-base,#8993a344);border-radius:12px;overflow:hidden;margin:1rem 0;background:var(--background-color-base,#f4f6fa);color:var(--color-base,#202734);isolation:isolate}
+.ba-spine-toolbar{position:relative;z-index:3;display:flex;align-items:center;gap:8px;height:48px;box-sizing:border-box;padding:4px 10px;background:var(--background-color-base,#f4f6fa);border-bottom:1px solid #8993a330;flex-shrink:0}
+.ba-spine-toolbar>label{display:flex;align-items:center;gap:6px;min-width:0;flex:1;font-size:14px}
+.ba-spine-toolbar button,.ba-spine-toolbar select,.ba-spine-advanced button,.ba-spine-advanced select{font:inherit;min-height:38px;padding:6px 10px;border:1px solid #8492a366;border-radius:7px;background:var(--background-color-base,#f4f6fa);color:inherit;cursor:pointer;box-sizing:border-box;touch-action:manipulation}
+.ba-spine-toolbar select{max-width:180px;min-width:0;flex:1}.ba-spine-toolbar button{flex-shrink:0;font-size:14px}
+.ba-spine-menu{position:absolute;z-index:5;top:48px;right:8px;left:8px;max-height:calc(80vh - 48px);max-height:calc(80dvh - 48px);overflow:auto;overscroll-behavior:contain;box-sizing:border-box;padding:12px;border:1px solid #8492a366;border-radius:0 0 10px 10px;background:var(--background-color-base,#f4f6fa);box-shadow:0 8px 28px #0003}
+.ba-spine-menu[hidden]{display:none}.ba-spine-advanced{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.ba-spine-advanced label{display:flex;align-items:center;gap:4px}.ba-spine-advanced select{max-width:170px}.ba-spine-zoom{min-width:3rem;text-align:center;font-variant-numeric:tabular-nums}
+.ba-spine-stage{position:relative;width:100%;height:clamp(320px,65vh,720px);overflow:hidden;background:linear-gradient(135deg,#a4c9ea28,#577cba12)}
+.ba-spine-stage canvas{display:block;width:100%;height:100%;touch-action:none;outline:none}.ba-spine-stage canvas:focus-visible{outline:2px solid #43aee8;outline-offset:-3px}
+.ba-spine-status{position:absolute;left:8px;right:8px;bottom:8px;z-index:2;padding:8px 12px;border-radius:8px;font-size:13px;pointer-events:none;background:var(--background-color-base,#f4f6fa);color:inherit;opacity:.95}.ba-spine-ready{display:none}.ba-spine-error{color:#d83548}
+.ba-spine-hint{margin:10px 0!important;padding:0!important;font-size:13px;opacity:.8}.ba-spine-details pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;max-height:180px;overflow:auto}.ba-spine-debug-label{font-size:13px}
+.ba-spine-marker{position:absolute;border:2px dashed #f69522;border-radius:50%;color:#f69522;pointer-events:none;box-sizing:border-box;font-size:12px;text-shadow:0 1px 2px #111;background:#f695220c}.ba-spine-marker-eye{border-color:#20baf6;color:#20baf6;background:#20baf60c}.ba-spine-marker[hidden]{display:none}
+.ba-spine-immersive{position:fixed!important;inset:0!important;z-index:2147483000!important;display:flex;flex-direction:column;width:100%!important;height:100vh!important;height:100dvh!important;margin:0!important;border:0!important;border-radius:0!important;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);box-sizing:border-box;background:var(--background-color-base,#182435)}
+.ba-spine-immersive .ba-spine-stage{flex:1;height:auto!important;min-height:0}.ba-spine-immersive .ba-spine-menu{top:calc(48px + env(safe-area-inset-top));max-height:calc(100dvh - 60px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+@media(max-width:1024px),(pointer:coarse){.ba-spine-toolbar{height:44px;padding:3px 8px;gap:6px}.ba-spine-toolbar button,.ba-spine-toolbar select{min-height:36px;font-size:14px;padding:4px 8px}.ba-spine-menu{top:44px}.ba-spine-stage{height:70vh;height:70dvh;min-height:260px;max-height:640px}.ba-spine-immersive .ba-spine-menu{top:calc(44px + env(safe-area-inset-top))}}
+@media(max-width:1024px) and (orientation:landscape),(pointer:coarse) and (orientation:landscape){.ba-spine-stage{height:calc(100vh - 56px);height:calc(100dvh - 56px);min-height:180px;max-height:none}.ba-spine-menu{max-height:calc(100dvh - 56px)}}
