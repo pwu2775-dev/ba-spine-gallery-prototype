@@ -1,0 +1,72 @@
+[
+  {
+    "file": "assets/CH0069/CH0069_home.atlas",
+    "bytes": 43409,
+    "sha256": "0bded34891729f2281e34fe6a62ef1b7acf8fe5bcc2abc67a35b38cc231d1b0a"
+  },
+  {
+    "file": "assets/CH0069/CH0069_home.png",
+    "bytes": 2907067,
+    "sha256": "c1dbac56f99bc3dd348c2d91c4b4567382ecb421281993babd22c4937c75cea6"
+  },
+  {
+    "file": "assets/CH0069/CH0069_home.skel",
+    "bytes": 1642292,
+    "sha256": "392e9335361dffcc0826882ff1f88ff84e2809bc3b7c5c2797a65f186e4d1ddf"
+  },
+  {
+    "file": "assets/CH0069/CH0069_home2.png",
+    "bytes": 639106,
+    "sha256": "e5449faf7c638155d0ae95e0af9296c517714d4cabd7bf352135fa29a8df5e7f"
+  },
+  {
+    "file": "assets/CH0069/CH0069_home3.png",
+    "bytes": 2740384,
+    "sha256": "bc14c955bc3fd378a613d6eb5480eb62a947c7e8ce9d99bd9b8643694753b7b4"
+  },
+  {
+    "file": "assets/CH0069/CH0069_home4.png",
+    "bytes": 723002,
+    "sha256": "57829da36b6f02f23af804e0a86c48103858c5090f36f8d101b760ab5113df17"
+  },
+  {
+    "file": "assets/CH0145/CH0145_home.atlas",
+    "bytes": 29442,
+    "sha256": "441eca8d6a51f5fe63886a9a0356a3db646509d3f3831ad3d05d722feeb1b73c"
+  },
+  {
+    "file": "assets/CH0145/CH0145_home.png",
+    "bytes": 3131388,
+    "sha256": "241cc9a8fd39e863b7cc4d2b3113d688909c88e8f82ef93893479adf9716715a"
+  },
+  {
+    "file": "assets/CH0145/CH0145_home.skel",
+    "bytes": 519728,
+    "sha256": "814e70c439709a26574aea870a7e070f44d8f0c2373b155a441670a0fa4d1bed"
+  },
+  {
+    "file": "assets/CH0145/CH0145_home2.png",
+    "bytes": 2017556,
+    "sha256": "e269163d44b6400989f17797439387fb90922b9e9b5a1c039ffdb4f1d13e622c"
+  },
+  {
+    "file": "assets/Nagisa/Nagisa_home.atlas",
+    "bytes": 32452,
+    "sha256": "c515b1604dcd78b546d24b35924f448145dc86ddf0f8a21b1c338963bab503be"
+  },
+  {
+    "file": "assets/Nagisa/Nagisa_home.png",
+    "bytes": 3791216,
+    "sha256": "e8f1cb016423f040c92d60040afb6d915d2d29e21cb91e02f7d62045041d6d7e"
+  },
+  {
+    "file": "assets/Nagisa/Nagisa_home.skel",
+    "bytes": 601148,
+    "sha256": "5a30a01b238b19202d9fbf841ef4d9bca2825e82070b185b609d813fceef14b7"
+  },
+  {
+    "file": "assets/Nagisa/Nagisa_home2.png",
+    "bytes": 3299922,
+    "sha256": "e249c164a6c43c3329839f91e9937f8279c29ef2e24344fc79935bc89bc9c358"
+  }
+]

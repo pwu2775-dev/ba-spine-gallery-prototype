@@ -1,0 +1,112 @@
+{
+  "character": {
+    "name": "CH0145_home",
+    "displayName": "CH0145_home",
+    "exportedAt": "2026-10-09T04:30:02.3333203Z",
+    "exportedFrom": "BlueArchive资源获取工具"
+  },
+  "spine": {
+    "skel": "CH0145_home.skel",
+    "atlas": "CH0145_home.atlas",
+    "version": "4.2.33",
+    "scale": 0.5,
+    "anchorY": 0.88,
+    "premultipliedAlpha": false
+  },
+  "animations": {
+    "idle": "Idle_01",
+    "available": [
+      "Dummy",
+      "Idle_01",
+      "LookEnd_01_A",
+      "LookEnd_01_M",
+      "Look_01_M",
+      "PatEnd_01_A",
+      "PatEnd_01_M",
+      "Pat_01_A",
+      "Pat_01_M",
+      "Start_Idle_01",
+      "Talk_01_A",
+      "Talk_01_M",
+      "Talk_02_A",
+      "Talk_02_M",
+      "Talk_03_A",
+      "Talk_03_M",
+      "Talk_04_A",
+      "Talk_04_M",
+      "Talk_05_A",
+      "Talk_05_M"
+    ]
+  },
+  "interactions": {
+    "limitMode": "native",
+    "head": {
+      "enabled": true,
+      "bone": "Touch_Point",
+      "hitRadius": 100,
+      "minX": -25,
+      "maxX": 25,
+      "minY": -20,
+      "maxY": 30,
+      "boneCenterOffsetX": 0,
+      "boneCenterOffsetY": 0,
+      "triggerDelay": 0.1,
+      "hitRadiusFree": 120,
+      "dragRangeFree": 90,
+      "dragRange": 90,
+      "animOnM": "Pat_01_M",
+      "animOnA": "Pat_01_A",
+      "animOffM": "PatEnd_01_M",
+      "animOffA": "PatEnd_01_A",
+      "voiceFiles": []
+    },
+    "eye": {
+      "enabled": true,
+      "bone": "Touch_Eye",
+      "hitRadius": 60,
+      "minX": -15,
+      "maxX": 15,
+      "minY": -10,
+      "maxY": 10,
+      "boneCenterOffsetX": 0,
+      "boneCenterOffsetY": 0,
+      "triggerDelay": 0.1,
+      "hitRadiusFree": 70,
+      "dragRangeFree": 50,
+      "dragRange": 50,
+      "animOnM": "Look_01_M",
+      "animOnA": "",
+      "animOffM": "LookEnd_01_M",
+      "animOffA": "LookEnd_01_A",
+      "voiceFiles": []
+    },
+    "body": {
+      "enabled": true,
+      "talkAnims": [
+        "Talk_01_M",
+        "Talk_02_M",
+        "Talk_03_M",
+        "Talk_04_M",
+        "Talk_05_M"
+      ],
+      "voiceMap": {},
+      "subtitleMap": {}
+    }
+  },
+  "bgm": {
+    "url": ""
+  },
+  "audio": {
+    "volume": 0,
+    "availableVoiceLangs": []
+  },
+  "mode": {
+    "interactive": true,
+    "showControlPanel": true,
+    "background": "transparent"
+  },
+  "framing": {
+    "hiddenSlots": [],
+    "method": "idle-scene-component"
+  }
+}
