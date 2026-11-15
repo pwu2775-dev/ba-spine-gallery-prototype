@@ -19,3 +19,15 @@ python -m http.server 8000
 ```
 
 然后在浏览器访问 <http://localhost:8000/>；按 `Ctrl+C` 停止服务器。
+
+在 PowerShell 中，可在仓库目录运行以下命令，检查素材是否与清单中的 SHA-256 一致：
+
+```powershell
+$entries = Get-Content -Raw -Encoding UTF8 asset-manifest.json | ConvertFrom-Json
+$entries | Where-Object {
+    -not (Test-Path -LiteralPath $_.file) -or
+    (Get-FileHash -LiteralPath $_.file -Algorithm SHA256).Hash -ne $_.sha256
+} | Select-Object -ExpandProperty file
+```
+
+没有输出表示清单中的文件均存在且校验值匹配。
