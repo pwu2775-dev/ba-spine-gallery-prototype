@@ -11,3 +11,11 @@
 原始实例文件通过 `asset-manifest.json` 记录 SHA-256。Spine Runtime 的唯一包装调整是使用独立 `BASpineRuntime` 命名空间，以避免覆盖站点全局变量。
 
 运行：在此目录启动 HTTP 静态服务器，访问 `index.html`。维基采用固定 Git commit 的 jsDelivr 地址加载构建产物和资源。
+
+例如，已安装 Python 3 时，可在仓库目录运行：
+
+```sh
+python -m http.server 8000
+```
+
+然后在浏览器访问 <http://localhost:8000/>；按 `Ctrl+C` 停止服务器。
